@@ -1,0 +1,65 @@
+.TooSimplePopup {
+  min-width: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.TooSimplePopup > .header {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 13px;
+  color: white;
+  background: #8453CF;
+}
+.TooSimplePopup > .container, .TooSimplePopup > .footer {
+  background: white;
+  color: black;
+  height: 100%;
+}
+.TooSimplePopup > .container {
+  min-height: 200px;
+  padding: 5px;
+}
+.TooSimplePopup > .container table th, .TooSimplePopup > .container table tr {
+  padding: 4px;
+}
+.TooSimplePopup > .container table {
+  border: #9D75D9 1px solid;
+  border-collapse: collapse;
+}
+.TooSimplePopup > .container table th {
+  background: #9D75D9;
+  color: white;
+  font-weight: normal;
+}
+.TooSimplePopup > .container table tr {
+  background: white;
+  color: black;
+}
+.TooSimplePopup > .footer, .TooSimplePopup > .header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.TooSimplePopup button {
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  background: #8453CF;
+  color: white;
+  min-width: 60px;
+}
+.TooSimplePopup button.moreFlat {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.TooSimplePopup button:hover {
+  background: #9D75D9;
+}

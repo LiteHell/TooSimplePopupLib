@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <link rel="stylesheet" href="TooSimplePopupLib.css"></link>
+  <script src="TooSimplePopupLib.js"></script>
+</head>
+
+<body>
+  test
+  <script>
+    var i = 1;
+    function showWindow() {
+      var win = TooSimplePopup();
+      win.title('This is popup');
+      win.content(function(element) {
+        element.innerHTML = 'Very easy. maybe?<br>('+(i++)+'st Window)';
+      });
+      win.foot(function(element) {
+        element.innerHTML = '<span style="color: gray;">too simple....</span>';
+      });
+      win.button('close', win.close);
+      win.button('say ho!', function() {
+        alert('ho!');
+      })
+      win.button('another window!', showWindow);
+    }
+    showWindow();
+  </script>
+</body>
+
+</html>
