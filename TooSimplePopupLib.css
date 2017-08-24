@@ -18,6 +18,9 @@
 }
 .TooSimplePopup > .container {
   min-height: 200px;
+  max-height: 80vh;
+  max-width: 80vw;
+  overflow: scroll;
   padding: 5px;
 }
 .TooSimplePopup > .container table th, .TooSimplePopup > .container table tr {
